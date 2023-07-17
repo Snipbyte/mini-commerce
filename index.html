@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+  <!-- Include ion.rangeSlider CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+
+  <title>Homepage</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+<body>
+
+  <!-- navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-2" href="/index.html">Logo here</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="row w-100">
+      <div class="col-12 col-md-2 col-sm-2 col-xs-2 new">
+        <form>
+        <div class="filters px-2">
+          <h2 class="text-center">Filter by</h2>
+
+          <hr>
+         <h4 class="lead">Price Range</h4>
+         <input type="text" id="rangeSlider"  name="rangeSlider" />
+          <hr>
+          <h4 class="lead">Size:</h4>
+          <div class="card-body">
+            <form id="sizes-form">
+              <div class="form-group">
+                <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check1" data-size="4">
+                <label class="form-check-label" for="size-check1">
+                 4
+               </label>
+             </div>
+             <div class="form-group">
+              <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check2" data-size="5">
+              <label class="form-check-label" for="size-check2">
+                5
+              </label>
+            </div>
+            <div class="form-group">
+              <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check3" data-size="6">
+              <label class="form-check-label" for="size-check3">
+                6
+              </label>
+            </div>
+            <div class="form-group">
+              <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check4" data-size="7">
+              <label class="form-check-label" for="size-check4">
+                7
+              </label>
+            </div>
+            <div class="form-group">
+              <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check5" data-size="8">
+              <label class="form-check-label" for="size-check5">
+                8
+              </label>
+            </div>
+            <div class="form-group">
+              <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check6" data-size="9">
+              <label class="form-check-label" for="size-check6">
+                9
+              </label>
+            </div>
+            <div class="form-group">
+              <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check8" data-size="10">
+              <label class="form-check-label" for="size-check8">
+                10
+              </label>
+            </div>
+            <div class="form-group">
+              <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check9" data-size="10">
+              <label class="form-check-label" for="size-check9">
+                11
+              </label>
+            </div>
+            <div class="form-group">
+              <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check10" data-size="10">
+              <label class="form-check-label" for="size-check10">
+                12
+              </label>
+            </div>
+          </form>
+        </div>
+        <hr>
+        <h4 class="lead">Style</h4>
+        <div class="card-body">
+          <form id="sizes-form">
+            <div class="form-group">
+              <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check11" data-style="Flat">
+              <label class="form-check-label" for="size-check11">
+               Flats
+             </label>
+           </div>
+           <div class="form-group">
+            <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check12" data-style="Heels">
+            <label class="form-check-label" for="size-check12">
+              Heels
+            </label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check13" data-style="Running">
+            <label class="form-check-label" for="size-check13">
+              Running
+            </label>
+          </div>
+          
+        </form>
+      </div>
+      
+      <hr>
+        <h4 class="lead">Gender</h4>
+        <div class="card-body">
+          <form id="sizes-form">
+            <div class="form-group">
+              <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check14" data-gender="Women">
+              <label class="form-check-label" for="size-check14">
+               Women
+             </label>
+           </div>
+           <div class="form-group">
+            <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check15" data-gender="Men">
+            <label class="form-check-label" for="size-check15">
+              Men
+            </label>
+          </div>
+          <div class="form-group">
+            <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check16" data-gender="Universal">
+            <label class="form-check-label" for="size-check16">
+              Universal
+            </label>
+          </div>
+          
+        </form>
+      </div>
+    <hr>
+    <h4 class="lead">Colors:</h4>
+    <div class="card-body">
+      <form id="sizes-form">
+        <div class="form-group">
+          <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check17" data-color="Blue">
+          <label class="form-check-label" for="size-check17">
+           Blue
+         </label>
+       </div>
+       <div class="form-group">
+        <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check18" data-color="Red">
+        <label class="form-check-label" for="size-check18">
+          Red
+        </label>
+      </div>
+      <div class="form-group">
+        <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check19" data-color="Green">
+        <label class="form-check-label" for="size-check19">
+          Green
+        </label>
+      </div>
+      <div class="form-group">
+        <input class="form-check-input size-filter-check" type="checkbox" value="" id="size-check20" data-color="Black">
+        <label class="form-check-label" for="size-check20">
+          Black
+        </label>
+      </div>
+</div>
+</div>
+</form>
+</div>
+<div class="col-12 col-md-10 col-sm-10 col-xs-10">
+  <div class="card">
+    <div class="card-body">
+      <div class="row d-flex justify-content-center" id="display-items-div">
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
